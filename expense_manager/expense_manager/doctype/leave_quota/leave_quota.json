@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LQ-{employee}-{leave_type}-{###}",
+ "creation": "2024-10-10 11:01:13.104727",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "leave_type",
+  "maximum_allowed",
+  "leave_taken",
+  "leave_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Leave Type",
+   "options": "Leave Type",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "leave_type.maximum_allowed",
+   "fieldname": "maximum_allowed",
+   "fieldtype": "Int",
+   "label": "Maximum Allowed"
+  },
+  {
+   "fieldname": "leave_taken",
+   "fieldtype": "Int",
+   "label": "Leave Taken",
+   "read_only": 1
+  },
+  {
+   "fieldname": "leave_balance",
+   "fieldtype": "Int",
+   "label": "Leave Balance",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-13 15:45:25.898700",
+ "modified_by": "Administrator",
+ "module": "Expense Manager",
+ "name": "Leave Quota",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

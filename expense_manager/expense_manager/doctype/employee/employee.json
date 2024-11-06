@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:EMP-{YYYY}-{####}",
+ "autoname": "format:EMP-{####}",
  "creation": "2024-10-06 11:36:08.472598",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -67,7 +67,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-06 12:20:21.326229",
+ "modified": "2024-10-10 11:32:42.733404",
  "modified_by": "Administrator",
  "module": "Expense Manager",
  "name": "Employee",

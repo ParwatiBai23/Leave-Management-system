@@ -2,26 +2,25 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2024-10-08 07:17:29.033720",
+ "creation": "2024-10-13 15:22:48.337232",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "expense_type_list"
+  "maximum_allowed"
  ],
  "fields": [
   {
-   "fieldname": "expense_type_list",
-   "fieldtype": "Text",
-   "label": "Description",
-   "options": "Expense Type List"
+   "fieldname": "maximum_allowed",
+   "fieldtype": "Int",
+   "label": "Maximum Allowed"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-08 16:41:28.629531",
+ "modified": "2024-10-13 15:23:35.539443",
  "modified_by": "Administrator",
  "module": "Expense Manager",
- "name": "Expense Type",
+ "name": "Leave Type",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
